@@ -26,7 +26,6 @@ public class Adventure{
         // i need to rewrite all of the dialogue like da mechanics will remain the same but. my characters being ooc makes me want to rip myfucking head off
 
         // -------------------------------------- Project Title & Description --------------------------------------
-        Util.clearConsole();
         System.out.println("MCHG in a nutshell");
         System.out.println("Priest shenanigans.");
         System.out.println();
