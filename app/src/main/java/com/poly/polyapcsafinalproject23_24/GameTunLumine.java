@@ -9,7 +9,7 @@ public class Adventure{
 
     //instance variables
     //   variables you plan to use throughout the adventure
-    private Scanner scan;
+
     private int option;
     private boolean hasVial;
     private boolean hasBible;
@@ -19,7 +19,7 @@ public class Adventure{
     public void run()
     {
         // User Input Scanner
-        scan = new Scanner(System.in);
+
 
         // unfortunately didn't use the method names in the slideshow, like waterLeft() or bibleEncounter(). this is a Util & if-statement only household and we fool around here
 
@@ -44,75 +44,73 @@ public class Adventure{
     Util.pauseConsole();
     */
 
-        Util.clearConsole();
+
         String keithquote1 = "\"Wake up, Draven.\"";
         System.out.println(keithquote1);
         System.out.println();
-        Util.pauseConsole();
+
         // wanted to test the string command out!!! it's really fun to use but so time consuming
 
-        Util.clearConsole();
+
         System.out.println("Your eyes slowly open to the soft sound of your creator's voice. As your vision clears, their figure increasingly becomes more and more recognizable.");
         System.out.println();
-        Util.pauseConsole();
 
-        Util.clearConsole();
+
+
         System.out.println("A tall man from the other side of your futon is sat up, looking over at you with his uncovered eye. He stares intensely while waiting for your response.");
         System.out.println();
-        Util.pauseConsole();
+
         // i forgot to add this part of the script earlier. i'm seething with rage. i'm seeing red.
 
-        Util.clearConsole();
+
         System.out.println("1. ...... \n2. Good morning.");
         System.out.println();
-        option = Util.enterInt(1,2);
+        option = null
         if (option == 1)
         {
-            Util.clearConsole();
-            System.out.println(TextColor.YELLOW + "\"......\"" + TextColor.RESET);
-            System.out.println(" ");
-            Util.pauseConsole();
 
-            Util.clearConsole();
+            System.out.println("\"......\"");
+            System.out.println(" ");
+
+
+
             System.out.println("The two of you end up not exchanging any words.");
             System.out.println(" ");
-            Util.pauseConsole();
 
-            Util.clearConsole();
+
+
             System.out.println("After a few seconds of awkward silence, your creator gets himself off the bed and heads straight for the bathroom to change out. You decide to do the same.");
             System.out.println(" ");
-            Util.pauseConsole();
+
 
         }
         if (option == 2)
         {
-            Util.clearConsole();
+
             System.out.println(TextColor.YELLOW + "\"Good morning.\"" + TextColor.RESET);
             System.out.println(" ");
-            Util.pauseConsole();
 
-            Util.clearConsole();
+
+
             System.out.println("Surprised, your creator’s eyebrows slightly lift. It worked — you worked. You’re responsive and he likes that, you think.");
             System.out.println(" ");
-            Util.pauseConsole();
 
-            Util.clearConsole();
+
+
             System.out.println("The two of you lifted yourselves off of the bed and heads to the bathroom to change out. Like the previous room, the bathroom was just as barren.");
             System.out.println(" ");
-            Util.pauseConsole();
+
 
         }
 
-        Util.clearConsole();
+
         System.out.println(TextColor.YELLOW + "\"Actually, you've never told me your name.\"" + TextColor.RESET);
         System.out.println(" ");
-        Util.pauseConsole();
 
-        Util.clearConsole();
         System.out.println("The mortal pauses for a bit after grabbing his clothes, taking a few seconds to remember his name.");
         System.out.println("\"Keith.\"");
         System.out.println(" ");
-        Util.pauseConsole();
+
 
         Util.clearConsole();
         System.out.println(TextColor.YELLOW + "\"Last name?\"" + TextColor.RESET);
