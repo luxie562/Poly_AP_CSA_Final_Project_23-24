@@ -32,7 +32,6 @@ public class Adventure{
         System.out.println("Disclaimer: Can we honestly edate? You're beautiful. You always make me laugh, always make me smile. You literally make me want to become a better");
 
         System.out.println();
-        Util.pauseConsole();
         start();
     }
 
