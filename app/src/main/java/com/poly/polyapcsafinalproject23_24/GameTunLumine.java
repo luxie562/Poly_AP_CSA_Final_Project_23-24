@@ -1,11 +1,13 @@
 package com.poly.polyapcsafinalproject23_24;
 
-public class GameTunLumine extends GameActivity
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import java.util.Scanner;
+public class GameTunLumine extends GameActivity {
 
-// -------------------------------------- Public Class --------------------------------------
-public class Adventure{
+    // -------------------------------------- Public Class --------------------------------------
 
     //instance variables
     //   variables you plan to use throughout the adventure
@@ -14,53 +16,50 @@ public class Adventure{
     private boolean hasVial;
     private boolean hasBible;
     private boolean hasLance;
-    private boolean hasCross;
+    private TextView tvTitle, tvSubtitle, tvStoryText;
+    private ImageView ivStory;
+    private Button btn1, btn2, btn3;
 
-    public void run()
-    {
-        // User Input Scanner
+    @Override
+    protected void run() {
+        setContentView(R.layout.activity_game_3_button);
 
+        tvTitle = findViewById(R.id.tv_title_txt);
+        tvSubtitle = findViewById(R.id.tv_subtitle);
+        tvStoryText = findViewById(R.id.tv_story);
+        ivStory = findViewById(R.id.iv_story);
+        btn1 = findViewById(R.id.btn_1);
+        btn2 = findViewById(R.id.btn_2);
+        btn3 = findViewById(R.id.btn_3);
 
-        // unfortunately didn't use the method names in the slideshow, like waterLeft() or bibleEncounter(). this is a Util & if-statement only household and we fool around here
+        tvTitle.setText("put title here");
+        tvSubtitle.setText("put subtitle here (or just delete)");
 
-        // i need to rewrite all of the dialogue like da mechanics will remain the same but. my characters being ooc makes me want to rip myfucking head off
-
-        // -------------------------------------- Project Title & Description --------------------------------------
-        System.out.println("MCHG in a nutshell");
-        System.out.println("Priest shenanigans.");
-        System.out.println();
-        System.out.println("Disclaimer: Can we honestly edate? You're beautiful. You always make me laugh, always make me smile. You literally make me want to become a better");
-
-        System.out.println();
+        String text = "MCHG in a nutshell\nPriest shenanigans.\nDisclaimer: Can we honestly edate? You're beautiful. You always make me laugh, always make me smile. You literally make me want to become a better";
+        tvStoryText.setText(text);
         start();
+    };
+
+    private void setAllBtnsVisible()
+    {
+        btn1.setVisibility(View.VISIBLE);
+        btn2.setVisibility(View.VISIBLE);
+        btn3.setVisibility(View.VISIBLE);
     }
 
     private void start()
     {
         // -------------------------------------- Story Prologue --------------------------------------
-    /* Util.clearConsole();
-    System.out.println(" ");
-    System.out.println(" ");
-    Util.pauseConsole();
-    */
 
+        setAllBtnsVisible();
 
-        String keithquote1 = "\"Wake up, Draven.\"";
-        System.out.println(keithquote1);
-        System.out.println();
+        String text = "\"Wake up, Draven.\""
+                + "\nYour eyes slowly open to the soft sound of your creator's voice. As your vision clears, their figure increasingly becomes more and more recognizable."
+                +"A tall man from the other side of your futon is sat up, looking over at you with his uncovered eye. He stares intensely while waiting for your response.";
 
-        // wanted to test the string command out!!! it's really fun to use but so time consuming
+        tvStoryText.setText(text);
 
-
-        System.out.println("Your eyes slowly open to the soft sound of your creator's voice. As your vision clears, their figure increasingly becomes more and more recognizable.");
-        System.out.println();
-
-
-
-        System.out.println("A tall man from the other side of your futon is sat up, looking over at you with his uncovered eye. He stares intensely while waiting for your response.");
-        System.out.println();
-
-        // i forgot to add this part of the script earlier. i'm seething with rage. i'm seeing red.
+        setAllBtnsVisible();
 
 
         System.out.println("1. ...... \n2. Good morning.");
