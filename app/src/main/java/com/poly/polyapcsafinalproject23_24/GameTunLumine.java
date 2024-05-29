@@ -32,10 +32,10 @@ public class GameTunLumine extends GameActivity {
         btn2 = findViewById(R.id.btn_2);
         btn3 = findViewById(R.id.btn_3);
 
-        tvTitle.setText("put title here");
-        tvSubtitle.setText("put subtitle here (or just delete)");
+        tvTitle.setText("some priest game");
+        tvSubtitle.setText("characters are ooc but i don't care for storytelling i just want an A in this class");
 
-        String text = "MCHG in a nutshell\nPriest shenanigans.\nDisclaimer: Can we honestly edate? You're beautiful. You always make me laugh, always make me smile. You literally make me want to become a better";
+        String text = "some priest game\nas of may 5th 2024 i am coding this with a terrible stomach ache but i am thugging it out";
         tvStoryText.setText(text);
         start();
     };
@@ -53,23 +53,44 @@ public class GameTunLumine extends GameActivity {
 
         setAllBtnsVisible();
 
-        String text = "\"Wake up, Draven.\""
-                + "\nYour eyes slowly open to the soft sound of your creator's voice. As your vision clears, their figure increasingly becomes more and more recognizable."
-                +"A tall man from the other side of your futon is sat up, looking over at you with his uncovered eye. He stares intensely while waiting for your response.";
+        String text = "???: \"Wake up...\""
+                +"\nA droplet falls, landing on the hazy reflection of a priest looking back with sullen eyes."
+                +"On top of that reflection was another priest, younger and a bit uglier in comparison."
+                +"Is that rude to say? He's crying right now, but I don't think that stops me from calling him ugly."
+                +"Draven: \"Waaah... You're stuck...\""
+                +"Draven: \"You're stuck and I can't get you out!!! That pisses me off so much!!\""
+                +"Is he stupid?"
+                +"???: \"Can you wake up?\""
+                +"Draven: \"Huh?\""
+                +"Huaxu: \"WAKE UPPPPPPPPPPP\""
+                +"Draven: \"$*@#&($(#$&*@#?!??@!\""
+                +"Draven: \"Ouch?? I'm awake, stop-\""
+                +"Huaxu: \"You stupid oaf. You slept through the entire prayer and you not being there caused the church to explode.\""
+                +"Huaxu pulls Draven out of his bed and drags him towards his balcony."
+                +"Draven: \"You're overexaggerating, the church couldn't have possibly explo-\""
+                +"*fire crackling*"
+                +"Draven: \"oh\""
+                +"Draven: \"damn\""
+                +"Huaxu: \"We're going to Lake Magia to get supplies. You're going to help me rebuild it.\"";
 
         tvStoryText.setText(text);
 
         setAllBtnsVisible();
 
 
-        System.out.println("1. ...... \n2. Good morning.");
+        System.out.println("1. I am not doing that.\n2. ok");
         System.out.println();
         option = null
         if (option == 1)
         {
 
-            System.out.println("\"......\"");
-            System.out.println(" ");
+            System.out.println("Draven: \"I am not doing that.\"");
+            System.out.println("
+
+    // options are DOWN THERE!!! BELOW THE TEXT!!! modify those into simple game mechanics like Walk. Sit. thats all
+
+
+
 
 
 
