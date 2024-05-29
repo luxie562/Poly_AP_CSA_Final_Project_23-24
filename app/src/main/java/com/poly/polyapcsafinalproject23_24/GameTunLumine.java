@@ -51,7 +51,6 @@ public class GameTunLumine extends GameActivity {
     {
         // -------------------------------------- Story Prologue --------------------------------------
 
-        setAllBtnsVisible();
 
         String text = "???: \"Wake up...\""
                 +"\nA droplet falls, landing on the hazy reflection of a priest looking back with sullen eyes."
@@ -76,52 +75,51 @@ public class GameTunLumine extends GameActivity {
         tvStoryText.setText(text);
 
         setAllBtnsVisible();
+        btn1.setText("I am not doing that.");
+        btn2.setText("ok fine");
+        btn3.setVisibility(View.INVISIBLE);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { endingOne(); }
+        });
 
 
-        System.out.println("1. I am not doing that.\n2. ok");
-        System.out.println();
-        option = null
-        if (option == 1)
+
+
+
+
+
+
+
+    // voids
+        private void endingOne()
         {
+            String text = "Draven: \"I am not doing that.\""
+                    +"Draven: \"I'd rather throw myself headfirst into a wood chipper than rebuild the church again.\""
+                    +"Huaxu: \"Suit yourself then.\""
+                    +"Huaxu kicks Draven off the balcony."
+                    +"ending 1: stupid oaf falls and dies";
 
-            System.out.println("Draven: \"I am not doing that.\"");
-            System.out.println("
+            tvStoryText.setText(text);
+
+            setAllBtnsVisible();
+            btn1.setText("go back?");
+            btn2.setText("back to title :/");
+            btn3.setVisibility(View.INVISIBLE);
+        }
+
+
 
     // options are DOWN THERE!!! BELOW THE TEXT!!! modify those into simple game mechanics like Walk. Sit. thats all
 
 
 
+        System.out.println("Draven: \"ok fine\"");
+        System.out.println("Huaxu: \"Good boy. Get yourself ready, I'll be waiting outside.\"");
+        System.out.println("Huaxu jumps off the balcony.");
 
 
-
-            System.out.println("The two of you end up not exchanging any words.");
-            System.out.println(" ");
-
-
-
-            System.out.println("After a few seconds of awkward silence, your creator gets himself off the bed and heads straight for the bathroom to change out. You decide to do the same.");
-            System.out.println(" ");
-
-
-        }
-        if (option == 2)
-        {
-
-            System.out.println(TextColor.YELLOW + "\"Good morning.\"" + TextColor.RESET);
-            System.out.println(" ");
-
-
-
-            System.out.println("Surprised, your creator’s eyebrows slightly lift. It worked — you worked. You’re responsive and he likes that, you think.");
-            System.out.println(" ");
-
-
-
-            System.out.println("The two of you lifted yourselves off of the bed and heads to the bathroom to change out. Like the previous room, the bathroom was just as barren.");
-            System.out.println(" ");
-
-
-        }
 
 
         System.out.println(TextColor.YELLOW + "\"Actually, you've never told me your name.\"" + TextColor.RESET);
