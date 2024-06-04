@@ -35,7 +35,7 @@ public class GameTunLumine extends GameActivity {
         tvTitle.setText("some priest game");
         tvSubtitle.setText("characters are ooc but i don't care for storytelling i just want an A in this class");
 
-        String text = "some priest game\nas of may 5th 2024 i am coding this with a terrible stomach ache but i am thugging it out";
+        String text = "some priest game\ni am cooked and i am not getting this out in time";
         tvStoryText.setText(text);
         start();
     };
@@ -50,6 +50,7 @@ public class GameTunLumine extends GameActivity {
     private void start()
     {
         // -------------------------------------- Story Prologue --------------------------------------
+
 
 
         String text = "???: \"Wake up...\""
@@ -70,7 +71,7 @@ public class GameTunLumine extends GameActivity {
                 +"*fire crackling*"
                 +"Draven: \"oh\""
                 +"Draven: \"damn\""
-                +"Huaxu: \"We're going to Lake Magia to get supplies. You're going to help me rebuild it.\"";
+                +"Huaxu: \"We're going to Lake Edith to get supplies. You're going to help me rebuild it.\"";
 
         tvStoryText.setText(text);
 
@@ -81,10 +82,13 @@ public class GameTunLumine extends GameActivity {
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { endingOne(); }
+            public void onClick(View v) { endingOne(); }
         });
 
-
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { contOne(); }
+        });
 
 
 
@@ -99,14 +103,38 @@ public class GameTunLumine extends GameActivity {
                     +"Draven: \"I'd rather throw myself headfirst into a wood chipper than rebuild the church again.\""
                     +"Huaxu: \"Suit yourself then.\""
                     +"Huaxu kicks Draven off the balcony."
-                    +"ending 1: stupid oaf falls and dies";
+                    +"ending 1: fat oaf falls and dies";
 
             tvStoryText.setText(text);
 
             setAllBtnsVisible();
             btn1.setText("go back?");
-            btn2.setText("back to title :/");
+            btn2.setText("back to title...");
             btn3.setVisibility(View.INVISIBLE);
+        }
+        private void contOne()
+        {
+            String text = "Draven: \"ok fine.\""
+                    +"Huaxu: \"Good. Get yourself ready, I'll be waiting outside.\""
+                    +"Huaxu jumps off the balcony."
+                    +"Continue?";
+
+        }
+
+        // code for the commands first because i am not sure how to write the transitioning commands
+
+        private void start()
+        {
+            tvStoryText.setText("Start progressing?");
+
+            btn1.setText("start walking!");
+            btn2.setText("sit down for a bit...");
+
+            btn1.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){ // null }
+            });
+
         }
 
 
@@ -114,154 +142,6 @@ public class GameTunLumine extends GameActivity {
     // options are DOWN THERE!!! BELOW THE TEXT!!! modify those into simple game mechanics like Walk. Sit. thats all
 
 
-
-        System.out.println("Draven: \"ok fine\"");
-        System.out.println("Huaxu: \"Good boy. Get yourself ready, I'll be waiting outside.\"");
-        System.out.println("Huaxu jumps off the balcony.");
-
-
-
-
-        System.out.println(TextColor.YELLOW + "\"Actually, you've never told me your name.\"" + TextColor.RESET);
-        System.out.println(" ");
-
-        System.out.println("The mortal pauses for a bit after grabbing his clothes, taking a few seconds to remember his name.");
-        System.out.println("\"Keith.\"");
-        System.out.println(" ");
-
-
-        Util.clearConsole();
-        System.out.println(TextColor.YELLOW + "\"Last name?\"" + TextColor.RESET);
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println("\"Is that important to know?\"");
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println(TextColor.YELLOW + "\"Please? We've known each other since forever and just now have I properly gotten the chance to talk to you.\"" + TextColor.RESET);
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println("\"Because you've now fully gained your consciousness.\"");
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println(TextColor.YELLOW + "\"Exactly. So...\"" + TextColor.RESET);
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println("\"No.\"");
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println("You let out a loud sigh from Keith's dismissiveness and turn back to your pile of clothes. What are you going to wear today?");
-        System.out.println(" ");
-        System.out.println("1. Gold Adorned Priest");
-        System.out.println();
-        option = Util.enterInt(1, 1);
-
-        Util.clearConsole();
-        System.out.println("\"Are you ready to go?\"");
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println("1. Why do you want me to go with you? \n2. I'm ready.");
-        System.out.println();
-        option = Util.enterInt(1, 2);
-        if (option == 1)
-        {
-            Util.clearConsole();
-            System.out.println(TextColor.YELLOW + "\"Why do you want me to go with you?\"" + TextColor.RESET);
-            System.out.println(" ");
-            Util.pauseConsole();
-
-            Util.clearConsole();
-            System.out.println("\"Hm.. Because you’re my favorite creation to be around.\"");
-            System.out.println(" ");
-            Util.pauseConsole();
-
-            Util.clearConsole();
-            System.out.println(TextColor.YELLOW + "\"Really?\"" + TextColor.RESET);
-            System.out.println(" ");
-            Util.pauseConsole();
-
-            Util.clearConsole();
-            System.out.println("\"Yeah. Take that however you want.\"");
-            System.out.println(" ");
-            Util.pauseConsole();
-
-            Util.clearConsole();
-            System.out.println("You haven’t been conscious for long, but you can tell that he’s not that good at talking to other people yet. Aside from that, you feel a bit warm from the minor praise. Keith walks past you and leaves the bathroom.");
-            System.out.print("The two of you leave the apartment behind and begin heading straight for the temple.");
-
-            System.out.println(" ");
-            System.out.println(" ");
-            Util.pauseConsole();
-
-        }
-        if (option == 2)
-        {
-            Util.clearConsole();
-            System.out.println(TextColor.YELLOW + "\"I'm ready.\"" + TextColor.RESET);
-            System.out.println(" ");
-            Util.pauseConsole();
-
-            Util.clearConsole();
-            System.out.println("Keith nods, and calmly escorts you out.");
-            System.out.print("The two of you leave the apartment behind and begin heading straight for the temple.");
-
-            System.out.println(" ");
-            System.out.println(" ");
-            Util.pauseConsole();
-        }
-        Util.clearConsole();
-        System.out.println("As the two of you exit, you notice how large the world around you looks, and how empty it is outside of the building. Everything around you feels cold, unstable, and barren, along with a looming feeling that something may pop out and attack you from beneath the ground, which cracks with every step you take.");
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println("You look over at Keith, who bears a solemn and unwavering expression. With his walking posture being so dignified despite the ground breaking beneath him, you wonder if this is something he has already done with someone else before.");
-        System.out.print("Thinking about him releases a slight warmth in your chest.");
-
-        System.out.println(" ");
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println("The ground hardens and increasingly becomes stable, the energy you and Keith are exhibiting as you physically move is transferring itself to the environment. Approaching the sacred temple, you pause and take a few seconds to process the decaying, nature-ridden grove encasing your view.");
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println(TextColor.RED_BOLD + "Vices " + TextColor.RED + "In Exchange For " + TextColor.CYAN_BOLD + "Divinity" + TextColor.RESET + ": Prologue Complete");
-        System.out.println(" ");
-        Util.pauseConsole();
-
-        Util.clearConsole();
-        System.out.println(TextColor.WHITE_BOLD + "Goal" + TextColor.RESET + ": Collect the following Medallions to power the Sacred Cathedral:");
-        System.out.println("- Vial of Tears");
-        System.out.println("- Documents of the Puppeteer's Scriptures");
-        System.out.println("- Magic-Infused Lance");
-        System.out.println("- Gold Adorned Cross");
-
-        System.out.println(" ");
-        System.out.println(" ");
-        Util.pauseConsole();
-        selection();
-    }
-
-    // -------------------------------------- Prologue END --------------------------------------
-
-    // Choosing Route
-    // IMPORTANT NOTE: Zen Garden and Fragment-Ridden Fountain are currently unplayable routes. It will be finished later though.....
     private void selection()
     {
         Util.clearConsole();
